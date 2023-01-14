@@ -1,0 +1,42 @@
+body {
+    background: skyblue 
+                url('imagens/yoshi.png') 
+                repeat-x fixed 
+                center bottom;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: scroll; */
+    /* background-position: right top; */
+}
+
+#formatacao {
+    color: #0eb426;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline; /*undeline, overline, line-through*/
+}
+
+div {
+    /*
+    px -> tamanho fixo
+    % -> tamanho relativo
+    em -> tamanho relativo ao container
+    */
+    font-size: 30px;
+}
+
+#texto {
+    font: bold 16px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#texto1 {
+    color: #0eb426;
+    font-size: 1em;
+    /*normal, bold, 100 até 900*/
+    font-weight: 900;
+}
+
+#texto2 {
+    color: #0eb426;
+    font-size: 100%;
+    font-style: italic;
+}
