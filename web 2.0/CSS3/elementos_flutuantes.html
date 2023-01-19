@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos Flutuantes</title>
     <style>
+        #principal {
+            border: 5px solid red;
+            background: green;
+        }
+
         .conteudo {
-            background: skyblue;
+            background: yellow;
             border: 2px solid black;
             width: 150px;
             height: 150px;
             margin: 10px;
-            float: left;
+            float: right;
         }
 
         .clear {
             /* 
             Limpar o fluxo dos elementos flutuantes 
             */
-            clear: left; /* left, right, none, both(ambos)*/
+            clear: both; /* left, right, none, both(ambos)*/
         }
 
-        .conteudo2 {
+        /* .conteudo2 {
             background: rgba(0, 128, 0, 0.67);
             border: 2px solid black;
             width: 150px;
@@ -34,24 +39,28 @@
             border: 2px solid black;
             width: 150px;
             height: 150px;
-        }
+        } */
 
     </style>
 </head>
 <body>
     
-    <div class="conteudo">
-        conteúdo 01
-    </div>
-
-    <div class="conteudo">
-        conteúdo 02
-    </div>
-
-    <div class="conteudo">
-        conteúdo 03
+    <div id="principal">
+        <div class="conteudo">
+            conteúdo 01
+        </div>
+        <div class="conteudo">
+            conteúdo 02
+        </div>
+        <div class="conteudo">
+            conteúdo 03
+        </div>
+        <!-- <div class="clear"></div> -->
+        <p class="clear">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur ipsa repellendus, odit, odio soluta quibusdam rem distinctio maxime pariatur accusantium quas optio perferendis enim. Necessitatibus itaque est expedita fuga.
+        </p>
     </div>
     
-    <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tenetur ipsa repellendus, odit, odio soluta quibusdam rem distinctio maxime pariatur accusantium quas optio perferendis enim. Necessitatibus itaque est expedita fuga.</p>
+    
 </body>
 </html>
