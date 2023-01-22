@@ -1,0 +1,63 @@
+/* Barra de navegação Vertical */
+ul#nav-lateral {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul#nav-lateral a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url('img/menu.png') no-repeat left bottom;
+}
+
+ul#nav-lateral a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
+
+#home ul#nav-lateral .home a,
+#sobre ul#nav-lateral .sobre a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
+
+/* Barra de navegação horizontal */
+ul#nav-inferior {
+    margin: 10;
+    padding: 0;
+    list-style: none;
+    width: 556px;
+    background: #159cb0 url('img/fundo-horizontal.png') repeat-x;
+    float: left;
+}
+
+ul#nav-inferior li {
+    float: left;
+}
+
+ul#nav-inferior  a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url('img/divisor.png') repeat-y left top;
+    /* border: 1px solid red; */
+}
+
+ul#nav-inferior .primeiro  a {
+    background: none;
+}
+
+ul#nav-inferior  a:hover {
+    color: #085662;
+    background-color: #44cade;
+}

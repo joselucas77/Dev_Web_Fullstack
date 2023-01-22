@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+
+        body {
+            background-color: #007fc7;
+        }
+
+        .container {
+            border: 10px solid black;
+            background-color: white;
+            width: 600px;
+            height: 400px;
+            margin: 10px auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        p {
+            border: 1px solid red;
+            position: static;
+            width: 250px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            /*top, right, bottom, left*/
+            top: -290px;
+            right: 0px;
+            bottom: 0px;
+            left: 340px;
+        }
+
+        .absolute {
+            border: 1px solid red;
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+        }
+
+        .fixed {
+            border: 1px solid red;
+            background-color: #f2f2f2;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+
+        #conteudo1 {
+            border: 1px solid red;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 2; /* "contexto de empilhamento" */
+        }
+
+        #conteudo2 {
+            border: 1px solid red;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: 1;
+        }
+
+        #conteudo3 {
+            border: 1px solid red;
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Position (statice relative)</h1>
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+        <p>
+            P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+        <p class="relative">
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+        <p class="relative">
+            P4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+    </div>
+
+    <div class="container">
+        <h1>Position (absolute e fixed)</h1>
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+        <p class="absolute">
+            P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime. Dolores reiciendis cumque sint at amet suscipit voluptas atque delectus voluptatibus minus! Laborum sit et alias! Saepe perspiciatis corporis animi.
+        </p>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center;">Sobrepondo Elementos</h1>
+        <div id="conteudo1">Conteudo 1</div>
+        <div id="conteudo2">Conteudo 2</div>
+        <div id="conteudo3">Conteudo 3</div>
+    </div>
+
+    <h4 class="fixed">
+        LEMBRETE: <em>este card está em posicionamento fixo</em>
+    </h4>
+</body>
+</html>
