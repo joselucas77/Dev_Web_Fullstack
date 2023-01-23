@@ -1,0 +1,94 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#container {
+    /* width: 720px; */
+    /* Para Layouts Fluidos ou líquidos usa-se porcentagem */
+    width: 960px; /*85%*/
+    margin: 0 auto;
+    background: white url('../imagens/coluna.png') repeat-y left top;
+    max-width: 1280px;
+    min-width: 720px;
+}
+
+#marca {
+    background: #225992 url('../imagens/cabecalho2.jpg') no-repeat center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+/* #imagem {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 90%;
+} */
+
+#conteudo {
+    /* width: 520px; */
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    /* width: 320px; */
+    width: 63%;
+    float: left;
+    padding-left: 2%;
+}
+
+/* div#conteudo-principal h2, p {
+    padding: 2%;
+} */
+
+img.img-noticia {
+    width: 96%;
+    max-width: 600px;
+    /* padding-left: 2%; */
+}
+
+#conteudo-secundario {
+    /* width: 180px; */
+    width: 34%;
+    float: right;
+    background-color: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    /* width: 180px; */
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: #d1d1d1; */
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#navegacao li a:hover {
+    color: white;
+}
+
+#rodape {
+    clear: both;
+    padding: 5px;
+    background-color: #c4c4c4;
+    text-align: center;
+}
