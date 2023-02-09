@@ -1,0 +1,20 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background: #b9c941 url("../imagens/camera.png"); */
+    /* background: linear-gradient(96deg,red, yellow); */
+    /* background: radial-gradient(red, yellow); */
+    background-color: #009670;
+    /*           h   v   blur spread  color                */
+    box-shadow: 20px 20px 100px 50px black;
+}
+
+
+#caixa h1 {
+    color: white;
+    /*           h   v   blur  color                */
+    text-shadow: 0px 8px 3px rgba(0, 0, 0, 0.2);
+}
