@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var a = 10
+        var b = 20
+        var c = null // variável auxiliar
+
+        document.write("<p>A: " + a + "</p>")
+        document.write("<p>B: " + b + "</p>")
+        document.write("<p>C: " + c + "</p>")
+
+        document.write("<hr>")
+
+        // Lógica de inversão de valores de A e B
+        c = a
+        a = b
+        b = c
+        c = null
+
+
+        // Final
+        document.write("<p>A: " + a + "</p>")
+        document.write("<p>B: " + b + "</p>")
+        document.write("<p>C: " + c + "</p>")
+
+    </script>
+</head>
+<body>
+</body>
+</html>
