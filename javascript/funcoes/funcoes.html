@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+
+        // Funções podem ser de dois tipos:
+        // void (apenas lógica)
+        // retorno (lógica com retorno)
+
+        function calcularAreaTerreno ( largura, comprimento ) {
+            //lógica
+            var area = largura * comprimento
+            return area
+        }
+
+        document.write('O terreno possui ' + calcularAreaTerreno(15, 25) + ' metro quadrados')
+
+
+        // flexibilidade de parâmetros
+        function soma (a, b) {
+            // b = b === undefined ? 0 : b
+            return a+b 
+        }
+
+        console.log(soma(6, 4))
+        console.log(soma(6)) // 6 + undefined = not a number
+        console.log(soma(6, 4, 7, 3)) //desconsidera os parâmetros adicionais...
+        console.log(soma()) // NaN
+
+        //Função anônima (wrapper)
+        var exibirMsg = function(nome) {
+            console.log('Olá ' + nome + ', tudo bem?')
+        }
+
+        exibirMsg('Lucas')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

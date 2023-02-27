@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <script>
+        var num1 = parseInt(prompt('Digite um número: '))
+        var num2 = parseInt(prompt('Digite outro número: '))
+        var operacao = prompt("Qual operação voce deseja realizar: soma ou subtração?")
+
+        function soma(num1, num2) {return num1+num2}
+        function sub(num1, num2) {return num1-num2}
+
+        function op(num1, num2, operacao) {
+            var resultado = 0
+
+            if(operacao == 'soma') {
+                resultado = soma(num1, num2)
+            } else if(operacao == 'subtracao') {
+                resultado = sub(num1, num2)
+            }
+
+            return resultado
+        }
+
+        document.write('A ' + operacao + ' entre ' + num1 + ' e ' + num2 + ' é: ' + op(num1,num2, operacao))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
