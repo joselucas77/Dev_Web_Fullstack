@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+        // https://www.w3schools.com/jsref/dom_obj_event.asp
+
+        function acaoMouse() {
+            alert('O elemento foi clicado!') 
+        }
+
+        function acaokKeyboard() {
+            alert('Você digitou algo!') 
+        }
+
+        function acaoWindow() {
+            console.log('descendo ou subindo?')
+        }
+    </script>
+</head>
+<body onresize="console.log('Evento disparado')"
+onscroll="acaoWindow()">
+
+    <h1>Capiturando eventos do mouse, teclado, janela e formulários</h1>
+    <div ondblclick="acaoMouse()" style="background-color: #ccc; height: 150px; width: 150px;"></div>
+
+    <br><br>
+
+    <form>
+        <label for="texto">Evento teclado:</label>
+        <input id="texto" type="text" onkeydown="acaokKeyboard()">
+        <br><br>
+        <label for="texto2">Evento formulário:</label>
+        <input onfocus="console.log('recebeu o foco')"
+        onblur="console.log('perdeu o foco')" type="text" id="texto2">
+        <br><br>
+        <select onchange="console.log('Opção alterada')">
+            <option>-- select --</option>
+            <option value="1">-- one --</option>
+            <option value="2">-- two --</option>
+        </select>
+    </form>
+
+    <div style="height: 1000px; 
+                width: 20px; 
+                background-color: #ccc; 
+                float: right;">
+    </div>
+</body>
+</html>

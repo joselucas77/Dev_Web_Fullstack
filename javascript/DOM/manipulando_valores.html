@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - manipulando valores</title>
+    <style>
+        #form {
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 11px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input id="entrada" 
+        type="text" placeholder="Digite um caracter aqui"
+        onkeyup="resgataCaracter()">
+
+        <hr>
+
+        <span>Letras:</span>
+        <input id="text" type="text" disabled>
+        <br><br>
+        <span>Números:</span>
+        <input id="num" type="text" disabled>
+
+        <hr>
+
+        <h4>Caracter digitado:</h4>
+        <p id="paragrafo"></p>
+    </form>
+
+    <script>
+
+        function resgataCaracter() {
+            //seleciona o valor de caracter
+            var caracter = document.getElementById('entrada').value
+
+            //limpa o campo de digitação
+            document.getElementById('entrada').value = ''
+
+            //limpar os espaços em branco nas extremidades da string
+            caracter.trim()
+
+            var texto = document.getElementById('paragrafo')
+
+            switch(caracter) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //adicionar o caracter no campo referente a números
+                    document.getElementById('num').value = caracter
+                    texto.innerText = 'Número'
+                    break;
+                default:
+                    //adicionar o caracter no campo referente a letras
+                    document.getElementById('text').value = caracter
+                    texto.innerText = 'Letra'
+            }
+                
+        }
+
+    </script>
+</body>
+</html>
