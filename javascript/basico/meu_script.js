@@ -3,4 +3,6 @@
  * Selecionar um elemento no DOM
  * atualizar o valor desse elemento com uma string
  */
-document.getElementById('nome').value = 'Oi' 
+// document.getElementById('nome').value = 'Oi' 
+
+console.log('oi')
