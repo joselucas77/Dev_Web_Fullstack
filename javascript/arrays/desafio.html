@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Array</title>
+</head>
+<body>
+    <input id="valor" type="text">
+    <button onclick="pegarValor('Adicionar')">Adicionar</button>
+    <button onclick="ordenarValores()">Ordenar</button>
+
+    <script>
+        var objetos = ['cadeira', 'impressora', 'garfo']
+        console.log(objetos)
+
+        function pegarValor() {
+            var valor = document.getElementById('valor').value
+
+            if(valor === '') {
+                alert('Informe um valor válido')
+            } else {
+                if(objetos.indexOf(valor) !== -1) {
+                    alert('Objeto já foi adicionado')
+                } else {
+                    objetos.push(valor)
+                    console.log(objetos)
+                }
+            }
+
+            document.getElementById('valor').value = ''
+            
+        }
+
+        function ordenarValores() {
+            console.log(objetos.sort())
+        }
+
+    </script>
+</body>
+</html>
