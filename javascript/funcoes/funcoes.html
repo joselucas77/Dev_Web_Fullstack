@@ -11,32 +11,43 @@
         // void (apenas lógica)
         // retorno (lógica com retorno)
 
-        function calcularAreaTerreno ( largura, comprimento ) {
-            //lógica
-            var area = largura * comprimento
-            return area
+        // function calcularAreaTerreno ( largura, comprimento ) {
+        //     //lógica
+        //     var area = largura * comprimento
+        //     return area
+        // }
+
+        // document.write('O terreno possui ' + calcularAreaTerreno(15, 25) + ' metro quadrados')
+
+
+        // // flexibilidade de parâmetros
+        // function soma (a, b) {
+        //     // b = b === undefined ? 0 : b
+        //     return a+b 
+        // }
+
+        // console.log(soma(6, 4))
+        // console.log(soma(6)) // 6 + undefined = not a number
+        // console.log(soma(6, 4, 7, 3)) //desconsidera os parâmetros adicionais...
+        // console.log(soma()) // NaN
+
+        // //Função anônima (wrapper)
+        // var exibirMsg = function(nome) {
+        //     console.log('Olá ' + nome + ', tudo bem?')
+        // }
+
+        // exibirMsg('Lucas')
+
+        function soma() {
+            var resultado = 0
+            for(var i in arguments) {
+                resultado += arguments[i]
+            }
+
+            return resultado
         }
 
-        document.write('O terreno possui ' + calcularAreaTerreno(15, 25) + ' metro quadrados')
-
-
-        // flexibilidade de parâmetros
-        function soma (a, b) {
-            // b = b === undefined ? 0 : b
-            return a+b 
-        }
-
-        console.log(soma(6, 4))
-        console.log(soma(6)) // 6 + undefined = not a number
-        console.log(soma(6, 4, 7, 3)) //desconsidera os parâmetros adicionais...
-        console.log(soma()) // NaN
-
-        //Função anônima (wrapper)
-        var exibirMsg = function(nome) {
-            console.log('Olá ' + nome + ', tudo bem?')
-        }
-
-        exibirMsg('Lucas')
+        console.log(soma(6,4,7.2,2.8,'m'))
 
     </script>
 </head>
