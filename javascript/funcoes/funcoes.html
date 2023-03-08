@@ -38,16 +38,32 @@
 
         // exibirMsg('Lucas')
 
-        function soma() {
-            var resultado = 0
-            for(var i in arguments) {
-                resultado += arguments[i]
-            }
+        // function soma() {
+        //     var resultado = 0
+        //     for(var i in arguments) {
+        //         resultado += arguments[i]
+        //     }
 
-            return resultado
-        }
+        //     return resultado
+        // }
 
-        console.log(soma(6,4,7.2,2.8,'m'))
+        // console.log(soma(6,4,7.2,2.8,'m'))
+
+        //Função Arrow
+
+        // let quadrado = (x) => {
+        //     return x*x
+        // }
+
+        //ou
+
+        // let quadrado = x => x*x //return implícito
+
+        // document.write(quadrado(3))
+
+        let parOuImpar = num => num%2 === 0 ? 'Par' : 'Ímpar'
+
+        document.write(parOuImpar(2))
 
     </script>
 </head>
