@@ -73,7 +73,7 @@ console.log('---------- spread + rest ----------')
 
 // let arr = [10,20,30,40]
 
-// let [ y, ...resto] = arr
+// let [ y, ...resto] = arr'
 
 // console.log(y)
 // console.log(resto)

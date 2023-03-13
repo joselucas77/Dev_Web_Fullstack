@@ -22,6 +22,8 @@ let Carro = function() {
 
 let carro = new Carro()
 
+const func = () => 
+
 console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
 carro.acelerar()
 carro.acelerar()
